@@ -1,5 +1,7 @@
-# EE500-26570_26513
-These are the codes used for the project.
+# Deep Learning for Vhannel Estimation and Signal Detection
+
+
+These are the codes used for the project 
 
 
 CE_LS.py containes the Least Square channel estimation code.
