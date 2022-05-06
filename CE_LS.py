@@ -124,7 +124,7 @@ def ofdm_simulate(bits, channelResponse, SNR):
     PS_est, hardDecision = Demapping(QPSK_est)
     return ber
 
-channel_test = np.load("C:/Users/souad/Desktop/hopefully_my_last_dataset/test_h.response.npy", allow_pickle=True)
+channel_test = np.load("C:/Users/souad/Desktop/dataset/test_h.response.npy", allow_pickle=True)
 test_size = channel_test.shape[0] 
 
 def BER_gen(bs):
@@ -135,7 +135,6 @@ def BER_gen(bs):
           BER = []
           for H in H_total:
             bits = np.random.binomial(n=1, p=0.5, size=(payloadBits_per_OFDM, ))
-            #BER = []
             y = ofdm_simulate(bits, H, SNR)
             BER.append(y)
           print("SNR = ",SNR," BER = ",sum(BER)/len(BER))  
