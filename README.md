@@ -1,7 +1,9 @@
-# Deep Learning for Vhannel Estimation and Signal Detection
+# Deep Learning for Channel Estimation and Signal Detection
+
+Electrical and Electronics Engineering Department - University of Benghazi
 
 
-These are the codes used for the project 
+These are the codes used for the project.
 
 
 CE_LS.py containes the Least Square channel estimation code.
